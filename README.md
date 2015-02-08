@@ -1,5 +1,5 @@
 # FireSense
-A python script for reading temperatures off a DS18B20 sensor and posting them to Firebase (http://www.firebase.org). Primarily intended for Raspberry Pi GPIO.
+A python script for reading temperatures off a DS18B20 sensor and posting them to a given url, for instance  [Firebase](http://www.firebase.org). Primarily intended for Raspberry Pi GPIO.
 
 ##Prerequisites
 * Python
