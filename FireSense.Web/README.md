@@ -7,7 +7,7 @@ A simple web site built on Yeoman gulp-angular-generator, that presents data fro
 * [gulp](http://gulpjs.com/)
 * [angular](http://angularjs.org/)
 * [generator-gulp-angular](https://github.com/Swiip/generator-gulp-angular)
-* [A firebase account](http://firebase.io)
+* [a firebase account](http://www.firebase.com)
 * many more bower and npm components that are automatically handled for you by gulp build.
 
 To run it, edit the src/app/main/main.controller.js to fit your Firebase configuration, then
