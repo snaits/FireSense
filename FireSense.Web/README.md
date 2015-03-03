@@ -1,6 +1,6 @@
 #FireSense.Web
 
-A simple web site built on Yeoman gulp-angular-generator, that presents data from Firebase in a n3-line-chart. It requires the following 
+A simple web site built on Yeoman generator-gulp-angular, that presents data from Firebase in a n3-line-chart. It requires the following 
 * [npm](http://npmjs.com/)
 * [bower](http://bower.io/)
 * [yeoman](http://yeoman.io/)
@@ -10,7 +10,7 @@ A simple web site built on Yeoman gulp-angular-generator, that presents data fro
 * [a firebase account](http://www.firebase.com)
 * many more bower and npm components that are automatically handled for you by gulp build.
 
-To run it, edit the src/app/main/main.controller.js to fit your Firebase configuration, then
+To run it, edit the variables in _src/app/firebase/firebaseUrl.js_ and _src/app/firebase/firebaseSecret.url_ to fit your Firebase configuration, then
 ```
 bower install
 npm install

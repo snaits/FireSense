@@ -1,12 +1,9 @@
 'use strict';
 
 angular.module('fireSense')
-  .controller('MainCtrl', function ($scope, $http, $firebase, $timeout) {
+  .controller('MainCtrl', function ($scope, $http, $firebase, $timeout, fire) {
     
-    var fire = new Firebase("https://YOUR FIREBASE URL HERE.firebaseio.com/YOUR FIREBASE COLLECTION HERE");
-    var sync = $firebase(fire);
-    var syncAsArray = sync.$asArray();
-    $scope.data = syncAsArray;
+    $scope.data = $firebase(fire).$asArray();
 
     var max = fire.orderByChild("celsius").limitToLast(1).on('child_added', function(item){
        $scope.max = item.val();
@@ -35,7 +32,7 @@ angular.module('fireSense')
     };
 
     var triviaTimeout;
-    syncAsArray.$watch(function(event) {
+    $scope.data.$watch(function(event) {
       if(triviaTimeout) $timeout.cancel(triviaTimeout);
       triviaTimeout =  $timeout( function(){ 
               $scope.last = $scope.data[$scope.data.length - 1];
