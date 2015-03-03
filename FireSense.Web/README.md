@@ -12,7 +12,8 @@ A simple web site built on Yeoman gulp-angular-generator, that presents data fro
 
 To run it, edit the src/app/main/main.controller.js to fit your Firebase configuration, then
 ```
-gulp build
+bower install
+npm install
 gulp serve
 ```
 
