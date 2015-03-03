@@ -1,0 +1,39 @@
+<div layout="vertical" layout-fill>
+
+  <header ng-include="'components/navbar/navbar.html'"></header>
+
+  <md-content>
+    <section class="jumbotron">
+      <h1>FireSense</h1>
+    <div layout="row" ng-controller="MainCtrl">
+    <span flex="100">
+      <h3>Stats</h3>
+      <span flex>Max reading: {{ max.celsius }}</span>
+      <span flex>Min reading: {{ min.celsius }}</span>
+      <span flex>Last reading: {{ last.celsius }}</span>
+
+    </div>
+
+    <span layout="row" flex="100" layout-align="center center">
+        <linechart data="data" options="options" mode="" class=""></linechart>
+    </div>
+
+    <div flex>
+        <div class="panel">            
+            <span layout="row" flex>{{trivia}}</span>
+        </div>
+
+    </div>
+</div>
+      
+    </section>
+
+  </md-content>
+
+  <footer>
+    <md-toolbar layout="row" layout-align="center center">
+      <p><md-button href="https://twitter.com/Stian_Sveen">@Stian_Sveen</md-button></p>
+    </md-toolbar>
+  </footer>
+
+</div>
